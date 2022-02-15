@@ -3,8 +3,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { decrement, increment } from './counterSlice';
 
 const Counter = () => {
-  // The function below is called a selector and allows us to select a value from
-  // the state.
   const count = useSelector((state) => state.counter.count);
   const dispatch = useDispatch();
 
